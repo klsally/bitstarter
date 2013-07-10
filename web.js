@@ -2,8 +2,7 @@ var express = require('express'), fs = require('fs');
 
 var app = express.createServer(express.logger());
 
-var buffer = new Buffer(256);
-buffer = fs.readFileSync("index.html");
+var buffer = fs.readFileSync("index.html");
 
 var bufStr = buffer.toString();
 
